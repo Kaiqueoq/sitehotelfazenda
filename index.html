@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel 4 Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .rating {
+        font-size: 2rem;
+        cursor: pointer;
+        user-select: none;
+        letter-spacing: 0.5rem;
+      }
+
+      .rating .star {
+        color: #ddd;
+        transition: color 0.2s;
+      }
+
+      .rating .star:hover,
+      .rating .star.active {
+        color: #ffc107;
+      }
+
+      .comentario {
+        padding: 0.5rem 0;
+      }
+
+      /* Botões personalizados com tema verde */
+      .btn-primary {
+        background-color: #7cb342 !important;
+        border-color: #7cb342 !important;
+        transition: 0.3s;
+      }
+
+      .btn-primary:hover {
+        background-color: #9ccc65 !important;
+        border-color: #9ccc65 !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(124, 179, 66, 0.4) !important;
+      }
+
+      .btn-success {
+        background-color: #7cb342 !important;
+        border-color: #7cb342 !important;
+      }
+
+      .btn-success:hover {
+        background-color: #9ccc65 !important;
+        border-color: #9ccc65 !important;
+      }
+
+      /* Links de navegação */
+      .nav-link {
+        color: #e0e0e0 !important;
+        transition: 0.3s;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: #9ccc65 !important;
+      }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(90deg, #2d5016 0%, #3d6b1f 100%); box-shadow: 0 4px 12px rgba(45,80,22,0.2); border-bottom: 3px solid #7cb342;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🌿 Hotel 4 Lagos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quartos.html">Quartos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="alimentacao.html">Alimentação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-logo-section">
+  <div class="logo-container">
+    <div class="logo-icon">
+      <img src="imagens/fotos do hotel fazenda/image_f2ea13c7.png" alt="Logo Hotel 4 Lagos">
+    </div>
+    <div>
+      <h1>Hotel 4 Lagos</h1>
+      <p>Refúgio Natural & Gastronomia Autêntica</p>
+    </div>
+  </div>
+</section>
+
+<main class="py-5">
+  <div class="container">
+    <section class="text-center mb-5 pt-5">
+      <h1 class="display-5">Bem-vindo ao Hotel Fazenda</h1>
+      <p class="lead text-muted">O refúgio ideal para descansar e conectar-se com a natureza.</p>
+    </section>
+
+    <section class="mb-5">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded overflow-hidden shadow-sm">
+          <div class="carousel-item active">
+            <img src="imagens/fotos do hotel fazenda/1.jpg" class="d-block w-100" alt="Sala de estar do hotel">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/fotos do hotel fazenda/2.jpg" class="d-block w-100" alt="Quarto do hotel">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/fotos do hotel fazenda/3.jpg" class="d-block w-100" alt="Área externa do hotel">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="hero">
+      <img src="imagens/fotos do hotel fazenda/4.jpg" alt="Hotel Fazenda" class="hero-image d-none d-md-block">
+      <div class="hero-info">
+        <h1>Conforto, lazer e tranquilidade</h1>
+        <p>Temos quartos espaçosos, piscina, cafeteria e atividades ao ar livre para toda a família.</p>
+        <button class="cta">Reserve agora</button>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Quartos confortáveis</h3>
+              <p class="card-text text-muted">Suítes com decoração acolhedora, cama king-size e vista para a natureza.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Áreas de lazer</h3>
+              <p class="card-text text-muted">Piscina, trilhas, playground e opções de entretenimento para todas as idades.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Gastronomia</h3>
+              <p class="card-text text-muted">Café da manhã caseiro, pratos típicos e uma experiência gastronômica acolhedora.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Avaliações e Comentários -->
+    <section class="mt-5">
+      <h2 class="text-center mb-4">Avaliações e Comentários</h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0">Deixe sua Avaliação</h5>
+            </div>
+            <div class="card-body">
+              <form id="formAvaliacao">
+                <div class="mb-3">
+                  <label for="nomeAval" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nomeAval" placeholder="Seu nome" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="emailAval" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="emailAval" placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Classificação (Estrelas)</label>
+                  <div class="rating" id="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                  </div>
+                  <input type="hidden" id="valorEstrelas" value="0" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="comentarioAval" class="form-label">Comentário</label>
+                  <textarea class="form-control" id="comentarioAval" rows="4" placeholder="Compartilhe sua experiência..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Enviar Avaliação</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card shadow-sm">
+            <div class="card-header bg-success text-white">
+              <h5 class="mb-0">Avaliações de Hóspedes</h5>
+            </div>
+            <div class="card-body" id="listaAvaliacoes">
+              <div class="comentario mb-3">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h6 class="mb-1"><strong>Maria Silva</strong></h6>
+                    <div class="text-warning mb-2">★★★★★</div>
+                  </div>
+                  <small class="text-muted">19/06/2026</small>
+                </div>
+                <p class="mb-0">Experiência maravilhosa! O hotel é lindo, os funcionários são atenciosos e a comida excelente. Com certeza voltarei!</p>
+              </div>
+
+              <hr>
+
+              <div class="comentario mb-3">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h6 class="mb-1"><strong>João Santos</strong></h6>
+                    <div class="text-warning mb-2">★★★★☆</div>
+                  </div>
+                  <small class="text-muted">15/06/2026</small>
+                </div>
+                <p class="mb-0">Muito bom! Lugar tranquilo e aconchegante. Adorei as atividades ao ar livre e a piscina. Recomendo!</p>
+              </div>
+
+              <hr>
+
+              <div class="comentario">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h6 class="mb-1"><strong>Ana Costa</strong></h6>
+                    <div class="text-warning mb-2">★★★★★</div>
+                  </div>
+                  <small class="text-muted">12/06/2026</small>
+                </div>
+                <p class="mb-0">Perfeito para uma fuga de fim de semana! Ambiente familiar, com estrutura completa. Voltamos em breve!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="hotel-footer">
+  <p>© 2026 Hotel 4 Lagos. Todos os direitos reservados a kaique77.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+  // Sistema de avaliações com estrelas
+  const stars = document.querySelectorAll('.rating .star');
+  const inputEstrelas = document.getElementById('valorEstrelas');
+
+  stars.forEach(star => {
+    star.addEventListener('click', function() {
+      const valor = this.dataset.value;
+      inputEstrelas.value = valor;
+      
+      stars.forEach(s => {
+        if (s.dataset.value <= valor) {
+          s.style.color = '#ffc107';
+        } else {
+          s.style.color = '#ddd';
+        }
+      });
+    });
+
+    star.addEventListener('mouseover', function() {
+      const valor = this.dataset.value;
+      stars.forEach(s => {
+        if (s.dataset.value <= valor) {
+          s.style.color = '#ffc107';
+        } else {
+          s.style.color = '#ddd';
+        }
+      });
+    });
+  });
+
+  document.getElementById('rating').addEventListener('mouseleave', function() {
+    const valor = inputEstrelas.value;
+    stars.forEach(s => {
+      if (s.dataset.value <= valor) {
+        s.style.color = '#ffc107';
+      } else {
+        s.style.color = '#ddd';
+      }
+    });
+  });
+
+  // Formulário de avaliação
+  document.getElementById('formAvaliacao').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('nomeAval').value;
+    const email = document.getElementById('emailAval').value;
+    const estrelas = document.getElementById('valorEstrelas').value;
+    const comentario = document.getElementById('comentarioAval').value;
+
+    if (estrelas == 0) {
+      alert('Por favor, selecione uma classificação com estrelas!');
+      return;
+    }
+
+    // Criar novo comentário
+    const novoComentario = document.createElement('div');
+    novoComentario.className = 'comentario mb-3';
+    novoComentario.innerHTML = `
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <h6 class="mb-1"><strong>${nome}</strong></h6>
+          <div class="text-warning mb-2">${'★'.repeat(estrelas)}${'☆'.repeat(5-estrelas)}</div>
+        </div>
+        <small class="text-muted">${new Date().toLocaleDateString('pt-BR')}</small>
+      </div>
+      <p class="mb-0">${comentario}</p>
+    `;
+
+    // Adicionar comentário à lista
+    const listaAvaliacoes = document.getElementById('listaAvaliacoes');
+    listaAvaliacoes.insertBefore(novoComentario, listaAvaliacoes.firstChild);
+
+    // Adicionar linha separadora se não for o primeiro
+    if (listaAvaliacoes.children.length > 1) {
+      const hr = document.createElement('hr');
+      listaAvaliacoes.insertBefore(hr, listaAvaliacoes.children[1]);
+    }
+
+    // Mostrar mensagem de sucesso
+    alert(`Obrigado ${nome}! Sua avaliação foi adicionada com sucesso.`);
+
+    // Limpar formulário
+    this.reset();
+    inputEstrelas.value = 0;
+    stars.forEach(s => s.style.color = '#ddd');
+  });
+
+  // Inicializar cores das estrelas
+  stars.forEach(star => star.style.color = '#ddd');
+</script>
+
+<style>
+  .rating {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    letter-spacing: 0.5rem;
+  }
+
+  .rating .star {
+    color: #ddd;
+    transition: color 0.2s;
+  }
+
+  .rating .star:hover,
+  .rating .star.active {
+    color: #ffc107;
+  }
+
+  .comentario {
+    padding: 0.5rem 0;
+  }
+</style>
+</body>
+</html>

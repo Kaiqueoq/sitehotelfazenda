@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartos - Hotel 4 Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .btn-primary {
+        background-color: #7cb342 !important;
+        border-color: #7cb342 !important;
+      }
+      .btn-primary:hover {
+        background-color: #9ccc65 !important;
+        border-color: #9ccc65 !important;
+      }
+      .nav-link { color: #e0e0e0 !important; }
+      .nav-link:hover, .nav-link.active { color: #9ccc65 !important; }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(90deg, #2d5016 0%, #3d6b1f 100%); box-shadow: 0 4px 12px rgba(45,80,22,0.2); border-bottom: 3px solid #7cb342;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🌿 Hotel 4 Lagos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="quartos.html">Quartos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="alimentacao.html">Alimentação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-logo-section">
+  <div class="logo-container">
+    <div class="logo-icon">
+      <img src="imagens/fotos do hotel fazenda/image_f2ea13c7.png" alt="Logo Hotel 4 Lagos">
+    </div>
+    <div>
+      <h1>Quartos</h1>
+      <p>Conforto e Elegância Esperando por Você</p>
+    </div>
+  </div>
+</section>
+
+<main class="py-5">
+  <div class="container">
+    <section class="text-center mb-5 pt-5">
+      <h1 class="display-5">Nossos Quartos</h1>
+      <p class="lead text-muted">Conforto e elegância em cada um de nossos ambientes.</p>
+    </section>
+
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <img src="imagens/fotos do hotel fazenda/1.jpg" class="card-img-top" alt="Quarto Standard">
+            <div class="card-body">
+              <h3 class="card-title">Quarto Standard</h3>
+              <p class="card-text">Quarto confortável com cama de solteiro, banheiro completo e vista para a natureza.</p>
+              <p class="fw-bold text-primary">A partir de R$ 150,00/noite</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalStandard">Reservar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <img src="imagens/fotos do hotel fazenda/2.jpg" class="card-img-top" alt="Quarto Duplo">
+            <div class="card-body">
+              <h3 class="card-title">Quarto Duplo</h3>
+              <p class="card-text">Quarto amplo com cama de casal, banheiro completo e varanda com vista panorâmica.</p>
+              <p class="fw-bold text-primary">A partir de R$ 250,00/noite</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDuplo">Reservar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <img src="imagens/fotos do hotel fazenda/3.jpg" class="card-img-top" alt="Suíte Luxo">
+            <div class="card-body">
+              <h3 class="card-title">Suíte Luxo</h3>
+              <p class="card-text">Suíte Premium com cama king-size, hidromassagem, sala de estar e varanda exclusiva.</p>
+              <p class="fw-bold text-primary">A partir de R$ 450,00/noite</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLuxo">Reservar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <img src="imagens/fotos do hotel fazenda/4.jpg" class="card-img-top" alt="Bangalô Família">
+            <div class="card-body">
+              <h3 class="card-title">Bangalô Família</h3>
+              <p class="card-text">Bangalô espaçoso com múltiplos quartos, sala completa e área externa com varanda.</p>
+              <p class="fw-bold text-primary">A partir de R$ 600,00/noite</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBangalo">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <a href="index.html" class="btn btn-primary btn-lg">Voltar para a página inicial</a>
+    </section>
+  </div>
+</main>
+
+<!-- Modal Quarto Standard -->
+<div class="modal fade" id="modalStandard" tabindex="-1" aria-labelledby="modalStandardLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalStandardLabel">Reservar Quarto Standard</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="formStandard">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="nomeStandard" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nomeStandard" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailStandard" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailStandard" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefoneStandard" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefoneStandard" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkinStandard" class="form-label">Data de Entrada</label>
+            <input type="date" class="form-control" id="checkinStandard" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkoutStandard" class="form-label">Data de Saída</label>
+            <input type="date" class="form-control" id="checkoutStandard" required>
+          </div>
+          <div class="mb-3">
+            <label for="hospedeirosStandard" class="form-label">Número de Hóspedes</label>
+            <input type="number" class="form-control" id="hospedeirosStandard" min="1" value="1" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Quarto Duplo -->
+<div class="modal fade" id="modalDuplo" tabindex="-1" aria-labelledby="modalDuploLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDuploLabel">Reservar Quarto Duplo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="formDuplo">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="nomeDuplo" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nomeDuplo" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailDuplo" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailDuplo" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefoneDuplo" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefoneDuplo" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkinDuplo" class="form-label">Data de Entrada</label>
+            <input type="date" class="form-control" id="checkinDuplo" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkoutDuplo" class="form-label">Data de Saída</label>
+            <input type="date" class="form-control" id="checkoutDuplo" required>
+          </div>
+          <div class="mb-3">
+            <label for="hospedeirosDoulio" class="form-label">Número de Hóspedes</label>
+            <input type="number" class="form-control" id="hospedeirosDoulio" min="1" value="1" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Suíte Luxo -->
+<div class="modal fade" id="modalLuxo" tabindex="-1" aria-labelledby="modalLuxoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLuxoLabel">Reservar Suíte Luxo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="formLuxo">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="nomeLuxo" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nomeLuxo" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailLuxo" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailLuxo" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefoneLuxo" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefoneLuxo" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkinLuxo" class="form-label">Data de Entrada</label>
+            <input type="date" class="form-control" id="checkinLuxo" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkoutLuxo" class="form-label">Data de Saída</label>
+            <input type="date" class="form-control" id="checkoutLuxo" required>
+          </div>
+          <div class="mb-3">
+            <label for="hospedeirosLuxo" class="form-label">Número de Hóspedes</label>
+            <input type="number" class="form-control" id="hospedeirosLuxo" min="1" value="1" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Bangalô Família -->
+<div class="modal fade" id="modalBangalo" tabindex="-1" aria-labelledby="modalBangaloLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBangaloLabel">Reservar Bangalô Família</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="formBangalo">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="nomeBangalo" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nomeBangalo" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailBangalo" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailBangalo" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefoneBangalo" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefoneBangalo" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkinBangalo" class="form-label">Data de Entrada</label>
+            <input type="date" class="form-control" id="checkinBangalo" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkoutBangalo" class="form-label">Data de Saída</label>
+            <input type="date" class="form-control" id="checkoutBangalo" required>
+          </div>
+          <div class="mb-3">
+            <label for="hospedeirosOutlook" class="form-label">Número de Hóspedes</label>
+            <input type="number" class="form-control" id="hospedeirosOutlook" min="1" value="1" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="hotel-footer">
+  <p>© 2026 Hotel 4 Lagos. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+  // Sistema simples de reservas com validação e confirmação
+  document.querySelectorAll('form[id^="form"]').forEach(form => {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      const nome = this.querySelector('[id*="nome"]').value;
+      const email = this.querySelector('[id*="email"]').value;
+      const checkin = this.querySelector('[id*="checkin"]').value;
+      const checkout = this.querySelector('[id*="checkout"]').value;
+      
+      // Validação básica de datas
+      if (new Date(checkin) >= new Date(checkout)) {
+        alert('A data de saída deve ser posterior à data de entrada!');
+        return;
+      }
+      
+      // Simular envio da reserva
+      const modal = bootstrap.Modal.getInstance(this.closest('.modal'));
+      modal.hide();
+      
+      // Mostrar mensagem de sucesso
+      alert(`✓ Reserva confirmada!\n\nHóspede: ${nome}\nEmail: ${email}\nEntrada: ${checkin}\nSaída: ${checkout}\n\nEm breve você receberá um email de confirmação com os detalhes da sua reserva.`);
+      
+      // Limpar o formulário
+      this.reset();
+    });
+  });
+</script>
+</body>
+</html>

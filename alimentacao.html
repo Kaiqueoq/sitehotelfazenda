@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentação - Hotel 4 Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .btn-primary {
+        background-color: #7cb342 !important;
+        border-color: #7cb342 !important;
+      }
+      .btn-primary:hover {
+        background-color: #9ccc65 !important;
+        border-color: #9ccc65 !important;
+      }
+      .nav-link { color: #e0e0e0 !important; }
+      .nav-link:hover, .nav-link.active { color: #9ccc65 !important; }
+
+      .prato-card {
+        background: rgba(255,255,255,0.9);
+        border: none;
+        border-top: 3px solid #7cb342;
+        transition: 0.3s;
+        height: 100%;
+      }
+
+      .prato-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(124,179,66,0.2);
+      }
+
+      .prato-card h6 {
+        color: #2d5016;
+        font-weight: 700;
+      }
+
+      .prato-card .descricao {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      .prato-card .preco {
+        color: #7cb342;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(90deg, #2d5016 0%, #3d6b1f 100%); box-shadow: 0 4px 12px rgba(45,80,22,0.2); border-bottom: 3px solid #7cb342;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🏨 Hotel 4 Lagos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quartos.html">Quartos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="alimentacao.html">Alimentação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-logo-section">
+  <div class="logo-container">
+    <div class="logo-icon">
+      <img src="imagens/fotos do hotel fazenda/image_f2ea13c7.png" alt="Logo Hotel 4 Lagos">
+    </div>
+    <div>
+      <h1>Alimentação</h1>
+      <p>Gastronomia Autêntica e Saborosa</p>
+    </div>
+  </div>
+</section>
+
+<main class="py-5">
+  <div class="container">
+    <section class="text-center mb-5 pt-5">
+      <h1 class="display-5">Alimentação & Gastronomia</h1>
+      <p class="lead text-muted">Sabores autênticos com ingredientes frescos.</p>
+    </section>
+
+    <!-- Café da Manhã -->
+    <section class="mb-5">
+      <h2 class="mb-4" style="color: #2d5016;">☀️ Café da Manhã</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Pão Caseiro com Queijo</h6>
+              <p class="descricao">Pão de fermentação natural acompanhado de queijo artesanal</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Frutas Sazonais</h6>
+              <p class="descricao">Seleção diária de frutas frescas</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Ovos à Moda</h6>
+              <p class="descricao">Ovos frescos com bacon artesanal e tomate</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Café Coado Caseiro</h6>
+              <p class="descricao">Café coado na hora com grãos selecionados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Almoço -->
+    <section class="mb-5">
+      <h2 class="mb-4" style="color: #2d5016;">🍽️ Almoço</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Frango ao Molho Pardo</h6>
+              <p class="descricao">Frango desfiado em molho caseiro com arroz e feijão</p>
+              <span class="preco">R$ 32,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Ensopado de Costela</h6>
+              <p class="descricao">Costela macia em caldo aromático com mandioca e cenoura</p>
+              <span class="preco">R$ 35,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Peixe Grelhado</h6>
+              <p class="descricao">Peixe fresco grelhado ao limão com salada</p>
+              <span class="preco">R$ 38,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Angu com Carne Seca</h6>
+              <p class="descricao">Angu cremoso com tiras de carne seca e queijo</p>
+              <span class="preco">R$ 28,00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jantar -->
+    <section class="mb-5">
+      <h2 class="mb-4" style="color: #2d5016;">🌙 Jantar</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Empadão Caseiro</h6>
+              <p class="descricao">Massa folhada crocante recheada com frango desfiado</p>
+              <span class="preco">R$ 26,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Moqueca de Peixe</h6>
+              <p class="descricao">Peixe fresco em caldo de coco e leite de coco</p>
+              <span class="preco">R$ 42,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Brás de Carne Seca</h6>
+              <p class="descricao">Carne seca desfiada com batata palha - serve 2</p>
+              <span class="preco">R$ 48,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Polenta com Cogumelos</h6>
+              <p class="descricao">Polenta macia com cogumelos refogados</p>
+              <span class="preco">R$ 24,00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobremesas -->
+    <section class="mb-5">
+      <h2 class="mb-4" style="color: #2d5016;">🍰 Sobremesas</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Pudim de Leite Condensado</h6>
+              <p class="descricao">Pudim caseiro com calda de caramelo</p>
+              <span class="preco">R$ 14,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Pavê Tradicional</h6>
+              <p class="descricao">Pavê com biscoito, doce de leite e calda</p>
+              <span class="preco">R$ 16,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Goiabada com Queijo</h6>
+              <p class="descricao">Goiabada caseira com queijo artesanal</p>
+              <span class="preco">R$ 18,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Broinhas de Chuva</h6>
+              <p class="descricao">Docinhos fritos crocantes com canela e açúcar</p>
+              <span class="preco">R$ 12,00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bebidas -->
+    <section class="mb-5">
+      <h2 class="mb-4" style="color: #2d5016;">🥤 Bebidas</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Café Coado</h6>
+              <span class="preco">R$ 5,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Suco Natural</h6>
+              <span class="preco">R$ 8,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card prato-card">
+            <div class="card-body">
+              <h6>Água de Coco Fresca</h6>
+              <span class="preco">R$ 10,00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <a href="index.html" class="btn btn-primary btn-lg">Voltar</a>
+    </section>
+  </div>
+</main>
+
+<footer class="hotel-footer">
+  <p>© 2026 Hotel 4 Lagos. Todos os direitos reservados a kaique.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html
