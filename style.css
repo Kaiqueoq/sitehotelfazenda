@@ -104,6 +104,7 @@ body {
 .navbar-brand img {
 	width: 20px;
 	height: auto;
+	margin: auto;
 }
 
 /* Header */
