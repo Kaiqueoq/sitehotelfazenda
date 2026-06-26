@@ -1,0 +1,22 @@
+{
+  "name": "sitehotelfazenda",
+  "version": "1.0.0",
+  "description": "Hotel Fazenda 4 Lagos website",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaiqueoq/sitehotelfazenda.git"
+  },
+  "keywords": ["hotel", "fazenda", "website"],
+  "author": "Kaique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaiqueoq/sitehotelfazenda/issues"
+  },
+  "homepage": "https://github.com/Kaiqueoq/sitehotelfazenda#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
