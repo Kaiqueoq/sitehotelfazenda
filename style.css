@@ -49,6 +49,14 @@ body {
 	flex-wrap: wrap;
 }
 
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
 .hero-logo-section .logo-icon {
 	width: 100px;
 	height: 100px;
